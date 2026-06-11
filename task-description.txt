@@ -1,0 +1,55 @@
+Zadanie domowe
+Wymagania zaliczenia
+
+        Task: Classify skin lesion images into three categories:
+
+1.       Melanocytic nevi
+
+2.       Melanoma
+
+3.       Others
+
+              Dataset: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
+
+·        Separate Train and Test sets are provided
+
+Paper ref: 1902.03368 
+
+
+Requirements:
+
+The solution must be submitted as:
+
+An interactive notebook (Jupyter Notebook or Google Colab)
+A PDF export of the notebook, including outputs and results.
+Notebook must include: 
+
+Student data (name, surname, student number), group, course name, and date
+    In my case: Igor Józefowicz, 193257, UM1, Uczenie maszynowe, 11.06
+Data preparation:
+Loading the dataset
+Selecting the required classes
+Using the provided training and test sets
+Data pre-processing
+Model design
+Model Training
+Hyperparameters for training
+Training procedure
+Model evaluation
+Evaluate the model on the test set
+Confusion matrix
+Macro F1-score
+Additional Requirements:
+
+Only Multi-Layer Perceptron (MLP) models (fully connected/dense layers), along with different activation functions and other techniques (normalisation, dropout, etc.), are allowed in model design. (Do not use CNNs, RNNs, or other deep learning architectures.)
+The solution can be implemented in Python using TensorFlow/ Keras or PyTorch.
+The notebook must include a final cell prepared for evaluation on an additional test dataset. The instructor will use this cell to evaluate the model on a hidden test set.
+The assignment can be completed individually or in groups of up to 2 students.
+Final evaluation may be performed on both the provided test set and an additional hidden dataset.
+
+
+Aktualizacja:
+
+1. Nie można stosować zespołów modeli (no ensambles)
+
+2. Do wyznaczenia F1-score dla wielu klasach proszę użyć uśredniania wyników dla klas z ważeniem według balansu klas (np. tryb ‘f1_weighted’).
